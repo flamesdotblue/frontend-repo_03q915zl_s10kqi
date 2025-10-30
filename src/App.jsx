@@ -5,7 +5,7 @@ import ContactCTA from './components/ContactCTA';
 
 function App() {
   return (
-    <div className="min-h-screen w-full bg-neutral-950 text-white">
+    <div className="min-h-screen w-full bg-white text-neutral-900">
       {/* Hero with Spline cover */}
       <Hero />
 
@@ -19,9 +19,9 @@ function App() {
       <ContactCTA />
 
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-black/60 py-8 text-center text-white/60">
+      <footer className="border-t border-red-600/20 bg-white py-8 text-center text-neutral-600">
         <p>
-          © {new Date().getFullYear()} Glazic Automotive Painting. All rights reserved.
+          © {new Date().getFullYear()} Glazic Automotive Painting — Crafted with precision in red & white.
         </p>
       </footer>
     </div>

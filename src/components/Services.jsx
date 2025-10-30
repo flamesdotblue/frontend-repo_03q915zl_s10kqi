@@ -4,7 +4,7 @@ const services = [
   {
     icon: Paintbrush,
     title: 'Full-body repaint',
-    desc: 'Factory-grade finishes with deep gloss and flawless surface preparation.'
+    desc: 'Factory-grade finishes with deep gloss and meticulous surface preparation.'
   },
   {
     icon: Sparkles,
@@ -25,11 +25,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative w-full bg-neutral-950 py-20 text-white">
+    <section id="services" className="relative w-full bg-white py-20 text-neutral-900">
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <div className="mb-12 max-w-2xl">
-          <h2 className="text-3xl font-semibold sm:text-4xl">Services</h2>
-          <p className="mt-3 text-white/70">
+          <h2 className="text-3xl font-extrabold tracking-tight text-red-600 sm:text-4xl">Services</h2>
+          <p className="mt-3 text-neutral-600">
             From subtle touch-ups to full transformations, we deliver showroom-grade results.
           </p>
         </div>
@@ -38,14 +38,14 @@ export default function Services() {
           {services.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="group rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:bg-white/10"
+              className="group rounded-xl border border-red-600/20 bg-white p-6 shadow-sm transition hover:shadow-md"
             >
-              <div className="mb-4 inline-flex rounded-lg bg-white/10 p-3 text-white">
+              <div className="mb-4 inline-flex rounded-lg bg-red-50 p-3 text-red-600 ring-1 ring-red-600/10">
                 <Icon className="h-6 w-6" />
               </div>
               <h3 className="text-lg font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-white/70">{desc}</p>
-              <div className="mt-4 h-1 w-0 bg-gradient-to-r from-cyan-400 to-fuchsia-500 transition-all duration-300 group-hover:w-16" />
+              <p className="mt-2 text-sm text-neutral-600">{desc}</p>
+              <div className="mt-4 h-1 w-0 bg-gradient-to-r from-red-500 to-red-700 transition-all duration-300 group-hover:w-16" />
             </div>
           ))}
         </div>
